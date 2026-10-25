@@ -265,7 +265,7 @@ function Index() {
       <section id="galeri" className="mx-auto max-w-6xl scroll-mt-32 px-6 py-24">
         <div className="text-center">
           <p className="text-xs tracking-[0.4em] text-accent uppercase">Galeri</p>
-          <h2 className="mt-4 text-4xl font-semibold md:text-5xl">#kordondayım</h2>
+          <h2 className="mt-4 text-4xl font-semibold md:text-5xl font-caros tracking-wide">#kordondayım</h2>
         </div>
         <div className="mt-12 grid auto-rows-[220px] grid-cols-2 gap-3 md:grid-cols-4">
           {(galleryFiles.length > 0
