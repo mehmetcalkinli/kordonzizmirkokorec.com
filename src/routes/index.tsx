@@ -175,24 +175,27 @@ function Index() {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="flex items-center justify-between md:hidden">
+          <div className="relative flex items-center justify-between md:hidden min-h-[38px]">
             <button
               onClick={() => setOpen(!open)}
               aria-label="Menü"
-              className="p-1 text-foreground"
+              className="z-10 p-1 text-foreground transition hover:text-accent"
             >
               {open ? <X className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
             </button>
 
-            <a href="#home" className="flex items-center justify-center">
-              <img src={logo} alt="Kordon İzmir Kokoreç logosu" className="h-9 w-auto" />
+            <a
+              href="#home"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+            >
+              <img src={logo} alt="Kordon İzmir Kokoreç logosu" className="h-9 w-auto max-w-[140px] object-contain" />
             </a>
 
             <a
               href={MAPS}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground transition hover:bg-accent"
+              className="z-10 rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground transition hover:bg-accent"
             >
               Yol Tarifi
             </a>
