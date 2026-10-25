@@ -230,7 +230,7 @@ function Index() {
         <div className="absolute inset-0 bg-hero-overlay" />
         <div className="relative max-w-3xl px-6 text-center">
           <p className="mb-6 text-xs tracking-[0.5em] text-accent uppercase">Satır · Meşe Kömürü · Ustalık</p>
-          <h1 className="text-5xl leading-tight font-semibold md:text-7xl">
+          <h1 className="font-serif text-5xl leading-tight font-semibold md:text-7xl">
             İzmir’in Efsanevi Lezzeti, <span className="text-accent italic">Asil Bir Dokunuşla.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-muted-foreground">

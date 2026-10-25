@@ -60,6 +60,7 @@
 
 @theme inline {
   --font-caros: "Caros", "Montserrat", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
   --font-display: "Montserrat", sans-serif;
   --font-sans: "Montserrat", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
@@ -197,6 +198,10 @@
 
 .font-caros {
   font-family: var(--font-caros), sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
 }
 
 @utility bg-hero-overlay { background: var(--gradient-hero); }
