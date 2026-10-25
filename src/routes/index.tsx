@@ -33,8 +33,8 @@ const PHONE_LINK = "tel:+905513536453";
 const WHATSAPP_LINK = "https://wa.me/905513536453";
 const FACEBOOK_LINK = "https://facebook.com/kordonizmirkokorec";
 const INSTAGRAM_LINK = "https://instagram.com/kordonizmirkokorec";
-const MAPS = "https://www.google.com/maps/dir/?api=1&destination=Şirintepe+Mahallesi+İsmet+İnönü+2+Caddesi+No:34+Tepebaşı+Eskişehir";
-const MAPS_EMBED = "https://www.google.com/maps?q=Şirintepe+Mahallesi+İsmet+İnönü+2+Caddesi+No+34+Tepebaşı+Eskişehir&output=embed";
+const MAPS = "https://maps.app.goo.gl/iDXdnKxsXUBXbVgs9?g_st=iw";
+const MAPS_EMBED = "https://www.google.com/maps?q=Osman+İzmir+Kokoreç+Şirintepe+İsmet+İnönü+Cd+No:34+Tepebaşı+Eskişehir&output=embed";
 const navLeft = [
   ["Ana Sayfa", "home"],
   ["Hikayemiz", "hikayemiz"],
@@ -323,7 +323,7 @@ function Index() {
             </div>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Kordon+Izmir+Kokorec+Eskisehir"
+              href={MAPS}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold text-accent transition hover:bg-primary hover:text-primary-foreground"
@@ -388,7 +388,14 @@ function Index() {
 
               <div className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 shrink-0 text-accent" />
-                <p className="text-sm text-foreground">{ADDRESS_TEXT}</p>
+                <a
+                  href={MAPS}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-foreground transition hover:text-accent"
+                >
+                  {ADDRESS_TEXT}
+                </a>
               </div>
 
               <div className="flex items-center gap-3">
