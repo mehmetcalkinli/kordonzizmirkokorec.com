@@ -167,7 +167,7 @@ function Index() {
                 href={MAPS}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full bg-primary px-5 py-2 text-xs font-semibold tracking-wider uppercase text-primary-foreground transition hover:bg-accent whitespace-nowrap"
+                className="rounded-full bg-primary px-5 py-2 text-xs font-semibold tracking-wider uppercase text-primary-foreground border border-white/15 transition hover:bg-accent hover:text-accent-foreground hover:border-accent whitespace-nowrap shadow-sm"
               >
                 Yol Tarifi Al
               </a>
@@ -195,7 +195,7 @@ function Index() {
               href={MAPS}
               target="_blank"
               rel="noreferrer"
-              className="z-10 rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground transition hover:bg-accent"
+              className="z-10 rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground border border-white/15 transition hover:bg-accent hover:text-accent-foreground"
             >
               Yol Tarifi
             </a>
@@ -219,7 +219,7 @@ function Index() {
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => setOpen(false)}
-                className="mt-2 w-full max-w-xs rounded-full bg-primary py-2.5 text-center text-xs font-semibold tracking-wider uppercase text-primary-foreground transition hover:bg-accent"
+                className="mt-2 w-full max-w-xs rounded-full bg-primary py-2.5 text-center text-xs font-semibold tracking-wider uppercase text-primary-foreground border border-white/15 transition hover:bg-accent hover:text-accent-foreground"
               >
                 Yol Tarifi Al
               </a>
@@ -240,8 +240,8 @@ function Index() {
             Saatlerce kısık meşe kömüründe pişen ve sade hazırlanan gerçek kuzu İzmir kokoreci.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="#menu" className="rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground transition hover:bg-accent shadow-md">Menüyü Keşfet</a>
-            <a href="#iletisim" className="rounded-full border border-foreground px-8 py-3 font-semibold transition hover:bg-foreground hover:text-background">Bize Ulaşın</a>
+            <a href="#menu" className="rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground border border-white/15 transition hover:bg-accent hover:text-accent-foreground hover:border-accent shadow-md">Menüyü Keşfet</a>
+            <a href="#iletisim" className="rounded-full border border-foreground/30 px-8 py-3 font-semibold transition hover:bg-foreground hover:text-background">Bize Ulaşın</a>
           </div>
         </div>
       </section>
@@ -256,7 +256,7 @@ function Index() {
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             {[[Flame, "Meşe Kömürü"], [Axe, "İzmir Usulü"], [Award, "Kuzu Kokoreci"]].map(([I, t]: any) => (
-              <div key={t} className="border-l-2 border-primary pl-4">
+              <div key={t} className="border-l-2 border-accent pl-4">
                 <I className="mb-2 h-5 w-5 text-accent" />
                 <p className="text-sm font-semibold">{t}</p>
               </div>
@@ -288,7 +288,7 @@ function Index() {
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-2">
             {(Object.keys(menu) as (keyof typeof menu)[]).map((k) => (
-              <button key={k} onClick={() => setTab(k)} className={`rounded-full px-6 py-2 text-sm font-medium transition ${tab === k ? "bg-primary text-primary-foreground shadow-sm" : "border border-border text-muted-foreground hover:text-foreground"}`}>
+              <button key={k} onClick={() => setTab(k)} className={`rounded-full px-6 py-2 text-sm font-medium transition ${tab === k ? "bg-primary text-primary-foreground shadow-sm border border-accent/40" : "border border-border text-muted-foreground hover:text-foreground hover:border-accent/40"}`}>
                 {k}
               </button>
             ))}
@@ -447,7 +447,7 @@ function Index() {
                 href={MAPS}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground transition hover:bg-accent shadow-md"
+                className="inline-block rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground border border-white/15 transition hover:bg-accent hover:text-accent-foreground hover:border-accent shadow-md"
               >
                 Yol Tarifi Al
               </a>
@@ -455,7 +455,7 @@ function Index() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-6 py-3 font-semibold text-accent transition hover:bg-accent hover:text-primary-foreground"
+                className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-6 py-3 font-semibold text-accent transition hover:bg-accent hover:text-accent-foreground"
               >
                 <WhatsAppIcon className="h-4 w-4" />
                 <span>WhatsApp'tan Ulaşın</span>
